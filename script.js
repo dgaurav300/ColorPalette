@@ -1,3 +1,4 @@
+const colors = document.querySelectorAll('.color');
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
@@ -7,9 +8,13 @@ function getRandomColor() {
     return color;
   }
   
+  colors.forEach(color => {
+    color.style.backgroundColor = getRandomColor();
+    color.innerHTML="<h1>"+getRandomColor()+"</h1>";
+  });
   document.addEventListener('keydown', function(event) {
     if (event.code === 'Space') {
-      const colors = document.querySelectorAll('.color');
+      
       colors.forEach(color => {
         color.style.backgroundColor = getRandomColor();
         color.innerHTML="<h1>"+getRandomColor()+"</h1>";
