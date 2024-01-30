@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .palette {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .color {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 50%;
+    border:2px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
